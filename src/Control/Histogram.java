@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Histogram {
 
-    public double[] computeHistogram(String PATH, String FILENAME) {
+    public static double[] computeHistogram(String PATH, String FILENAME) {
 
         File file = new File(PATH, FILENAME);
         BufferedImage bi;

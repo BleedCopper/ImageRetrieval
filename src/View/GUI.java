@@ -1,5 +1,6 @@
 package View;
 
+import Control.ColorCoherence;
 import Control.Histogram;
 import Model.Image;
 
@@ -47,8 +48,11 @@ public class GUI {
                 if (fsearch != null && fdir != null) {
                     File[] dirListing = fdir.listFiles();
                     if (dirListing != null) {
-                        Histogram histogram = new Histogram();
-                        double[] origFileHistogram = histogram.computeHistogram(fdir.getPath(), fsearch.getName());
+//                        Histogram histogram = new Histogram();
+//                        ColorCoherence colorCoherence = new ColorCoherence()
+                        double[] origFileHistogram = Histogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
+                        int[][] origFileCCV = ColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
+
 
                         ArrayList<Model.Image> list = new ArrayList<Image>();
                         for (File child : dirListing) {
@@ -57,7 +61,7 @@ public class GUI {
                             if (child.getName().equals(fsearch.getName())) continue;
 
                             if (colorHistogramMethodRadioButton.isSelected()) {
-                                double[] testingFileHistogram = histogram.computeHistogram(fdir.getPath(), child.getName());
+                                double[] testingFileHistogram = Histogram.computeHistogram(fdir.getPath(), child.getName());
                                 int counter = 0;
                                 double answer = 0;
 
@@ -72,6 +76,19 @@ public class GUI {
 
                                 Image img = new Image(child);
                                 img.setSimilarity(answer);
+                                list.add(img);
+                            }
+                            if(histogramRefinementWithColorRadioButton.isSelected()){
+                                int[][] testingFileCCV = ColorCoherence.computeCCV(fdir.getPath(), child.getName(), 5);
+
+                                double answer = 0;
+
+                                for (int i = 0; i < 159; i++) {
+                                    answer+=(Math.abs(origFileCCV[i][0]-testingFileCCV[i][0])+Math.abs(origFileCCV[i][1]-testingFileCCV[i][1]));
+                                }
+
+                                Image img = new Image(child);
+                                img.setSimilarity(1-answer);
                                 list.add(img);
                             }
                         }
