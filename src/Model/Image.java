@@ -35,6 +35,6 @@ public class Image {
     }
 
     public void setSimilarity(double similarity) {
-        this.similarity = similarity * 10000;
+        this.similarity = similarity;
     }
 }

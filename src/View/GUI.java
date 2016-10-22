@@ -1,5 +1,6 @@
 package View;
 
+import Control.CenteredColorCoherence;
 import Control.ColorCoherence;
 import Control.Histogram;
 import Model.Image;
@@ -52,7 +53,7 @@ public class GUI {
 //                        ColorCoherence colorCoherence = new ColorCoherence()
                         double[] origFileHistogram = Histogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
                         int[][] origFileCCV = ColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
-
+                        int[][][] origFileCenterCCV = CenteredColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
 
                         ArrayList<Model.Image> list = new ArrayList<Image>();
                         for (File child : dirListing) {
@@ -75,7 +76,7 @@ public class GUI {
                                 answer /= counter;
 
                                 Image img = new Image(child);
-                                img.setSimilarity(answer);
+                                img.setSimilarity(answer*10000);
                                 list.add(img);
                             }
                             if(histogramRefinementWithColorRadioButton.isSelected()){
@@ -85,6 +86,20 @@ public class GUI {
 
                                 for (int i = 0; i < 159; i++) {
                                     answer+=(Math.abs(origFileCCV[i][0]-testingFileCCV[i][0])+Math.abs(origFileCCV[i][1]-testingFileCCV[i][1]));
+                                }
+
+                                Image img = new Image(child);
+                                img.setSimilarity(1-answer);
+                                list.add(img);
+                            }
+                            if(CHWithCenteringRefinementRadioButton.isSelected()){
+                                int[][][] testingFileCenterCCV = CenteredColorCoherence.computeCCV(fdir.getPath(), child.getName(), 5);
+
+                                double answer = 0;
+
+                                for (int i = 0; i < 159; i++) {
+                                    answer+=(Math.abs(origFileCenterCCV[0][i][0]-testingFileCenterCCV[0][i][0])+Math.abs(origFileCenterCCV[0][i][1]-testingFileCenterCCV[0][i][1]));
+                                    answer+=(Math.abs(origFileCenterCCV[1][i][0]-testingFileCenterCCV[1][i][0])+Math.abs(origFileCenterCCV[1][i][1]-testingFileCenterCCV[1][i][1]));
                                 }
 
                                 Image img = new Image(child);
@@ -109,6 +124,8 @@ public class GUI {
                             i++;
                             size--;
                         }
+                        panel1.repaint();
+                        panel1.revalidate();
                     }
                 }
             }
