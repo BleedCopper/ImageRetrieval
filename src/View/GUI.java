@@ -1,8 +1,6 @@
 package View;
 
-import Control.CenteredColorCoherence;
-import Control.ColorCoherence;
-import Control.Histogram;
+import Control.*;
 import Model.Image;
 
 import javax.imageio.ImageIO;
@@ -34,6 +32,8 @@ public class GUI {
     private JButton btndirectory;
     private JPanel panImages;
     private JPanel panList;
+    private JRadioButton quadCHRadioButton;
+    private JRadioButton CCVWithCenteringRefinementRadioButton;
 
     private File fsearch;
     private File fdir;
@@ -52,6 +52,8 @@ public class GUI {
 //                        Histogram histogram = new Histogram();
 //                        ColorCoherence colorCoherence = new ColorCoherence()
                         double[] origFileHistogram = Histogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
+                        double[][] origFileQuadHistogram = QuadHistogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
+                        double[][] origFileCenterHistogram = CenteredCH.computeCH(fsearch.getParentFile().getPath(), fsearch.getName());
                         int[][] origFileCCV = ColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
                         int[][][] origFileCenterCCV = CenteredColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
 
@@ -93,6 +95,29 @@ public class GUI {
                                 list.add(img);
                             }
                             if(CHWithCenteringRefinementRadioButton.isSelected()){
+                                double[][] testingFileCenterHistogram = CenteredCH.computeCH(fdir.getPath(), child.getName());
+
+                                double fin=0;
+                                for (int j =0; j<2; j++){
+
+                                    int counter = 0;
+                                    double answer = 0;
+                                    for (int i = 0; i < 159; i++) {
+                                        if (origFileQuadHistogram[j][i] > 0.005) {
+                                            counter++;
+                                            answer += (1 - Math.abs(origFileCenterHistogram[j][i] - testingFileCenterHistogram[j][i]) / Math.max(origFileCenterHistogram[j][i], testingFileCenterHistogram[j][i]));
+                                        }
+                                    }
+
+                                    answer /= counter;
+                                    fin+=answer;
+                                }
+
+                                Image img = new Image(child);
+                                img.setSimilarity(fin*10000);
+                                list.add(img);
+                            }
+                            if(CCVWithCenteringRefinementRadioButton.isSelected()){
                                 int[][][] testingFileCenterCCV = CenteredColorCoherence.computeCCV(fdir.getPath(), child.getName(), 5);
 
                                 double answer = 0;
@@ -104,6 +129,29 @@ public class GUI {
 
                                 Image img = new Image(child);
                                 img.setSimilarity(1-answer);
+                                list.add(img);
+                            }
+                            if(quadCHRadioButton.isSelected()){
+                                double[][] testingFileQuadHistogram = QuadHistogram.computeHistogram(fdir.getPath(), child.getName());
+
+                                double fin=0;
+                                for (int j =0; j<4; j++){
+
+                                    int counter = 0;
+                                    double answer = 0;
+                                    for (int i = 0; i < 159; i++) {
+                                        if (origFileQuadHistogram[j][i] > 0.005) {
+                                            counter++;
+                                            answer += (1 - Math.abs(origFileQuadHistogram[j][i] - testingFileQuadHistogram[j][i]) / Math.max(origFileQuadHistogram[j][i], testingFileQuadHistogram[j][i]));
+                                        }
+                                    }
+
+                                    answer /= counter;
+                                    fin+=answer;
+                                }
+
+                                Image img = new Image(child);
+                                img.setSimilarity(fin*10000);
                                 list.add(img);
                             }
                         }

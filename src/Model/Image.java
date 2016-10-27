@@ -8,7 +8,7 @@ import java.io.File;
 public class Image {
     private File f;
     private double[] histogram;
-    private double similarity;
+    private int similarity;
 
     public Image(File f) {
         this.f = f;
@@ -30,11 +30,11 @@ public class Image {
         this.histogram = histogram;
     }
 
-    public double getSimilarity() {
+    public int getSimilarity() {
         return similarity;
     }
 
     public void setSimilarity(double similarity) {
-        this.similarity = similarity;
+        this.similarity = (int) similarity;
     }
 }
