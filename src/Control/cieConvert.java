@@ -666,4 +666,57 @@ public class cieConvert {
 		public double L, u, v;
 	}
 
+	public double computeLUVMaxDiff(){
+		double max = 0;
+		double currMax = max;
+
+		for(int i=0; i<LuvIndex.length; i++){
+
+			for(int j=i; j<LuvIndex.length; j++){
+                currMax = getColorDifference(i,j);
+
+				if(currMax > max)
+					max = currMax;
+			}
+		}
+
+		return max;
+	}
+
+
+	public double getColorDifference(int i , int j){
+
+        return Math.sqrt(Math.pow(LuvIndex[i].L-LuvIndex[j].L,2) +
+                         Math.pow(LuvIndex[i].u-LuvIndex[j].u,2) +
+                         Math.pow(LuvIndex[i].v-LuvIndex[j].v,2));
+    }
+
+	public double[][] getSimilarityMatrix(double p) {
+
+        double tColor = p*computeLUVMaxDiff();
+        double[][] simMatrix = new double[LuvIndex.length][LuvIndex.length];
+
+        System.out.println("Max Diff: "+computeLUVMaxDiff());
+        System.out.println("tColor: "+tColor);
+
+        for (int i = 0; i < LuvIndex.length; i++) {
+            for (int j = 0; j < LuvIndex.length; j++) {
+                double diff = getColorDifference(i, j);
+
+                if (diff > tColor)
+                    simMatrix[i][j] = 0;
+                else
+                    simMatrix[i][j] = 1 - diff / tColor;
+
+                System.out.printf("%.2f ",simMatrix[i][j]);
+            }
+
+
+             System.out.println();
+
+        }
+
+
+        return simMatrix;
+    }
 }
