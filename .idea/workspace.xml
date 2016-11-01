@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7adb7fd0-28a3-4e59-977b-fa532bbdb226" name="Default" comment="initial">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/CenteredCH.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/CenteredColorCoherence.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/ColorCoherence.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/QuadHistogram.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Control/CenteredCH.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Control/CenteredColorCoherence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Control/ColorCoherence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Control/QuadHistogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/Driver.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/Driver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/Histogram.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/Histogram.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/cieConvert$LUVClass.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/cieConvert$LUVClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/cieConvert.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/cieConvert.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Model/Image.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Model/Image.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1$1.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$2.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$3.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Control/Driver.java" afterPath="$PROJECT_DIR$/src/Control/Driver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Control/Histogram.java" afterPath="$PROJECT_DIR$/src/Control/Histogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Control/cieConvert.java" afterPath="$PROJECT_DIR$/src/Control/cieConvert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Image.java" afterPath="$PROJECT_DIR$/src/Model/Image.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI.form" afterPath="$PROJECT_DIR$/src/View/GUI.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI.java" afterPath="$PROJECT_DIR$/src/View/GUI.java" />
     </list>
     <ignored path="imageretrieval.iws" />
@@ -33,11 +55,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="17">
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding>
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuadHistogram.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Control/QuadHistogram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GUI.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CenteredColorCoherence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Control/CenteredColorCoherence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1581">
+              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CenteredCH.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Control/CenteredCH.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,64 +124,9 @@
       <file leaf-file-name="Histogram.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="663">
+              <caret line="43" column="13" selection-start-line="40" selection-start-column="12" selection-end-line="43" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="90" column="94" selection-start-line="90" selection-start-column="94" selection-end-line="90" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Image.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUI.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cieConvert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Control/cieConvert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="initializer##0;class#cieConvert#0" expanded="false" />
-                <element signature="method#initLuvIndex#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#IndexOf#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#RGBtoXYZ#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#round#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#XYZtoLUV#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#RGBtoLUV#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#LUVtoXYZ#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#XYZtoRGB#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#LUVtoRGB#0;class#cieConvert#0" expanded="false" />
-                <element signature="method#setValues#0;class#cieConvert#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,11 +152,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Control/cieConvert.java" />
-        <option value="$PROJECT_DIR$/src/View/GUI.form" />
         <option value="$PROJECT_DIR$/src/Control/Driver.java" />
         <option value="$PROJECT_DIR$/src/Control/Histogram.java" />
-        <option value="$PROJECT_DIR$/src/View/GUI.java" />
+        <option value="$PROJECT_DIR$/src/Control/ColorCoherence.java" />
+        <option value="$PROJECT_DIR$/src/Control/CenteredColorCoherence.java" />
+        <option value="$PROJECT_DIR$/src/Control/QuadHistogram.java" />
+        <option value="$PROJECT_DIR$/src/Control/CenteredCH.java" />
+        <option value="$PROJECT_DIR$/src/View/GUI.form" />
         <option value="$PROJECT_DIR$/src/Model/Image.java" />
+        <option value="$PROJECT_DIR$/src/View/GUI.java" />
       </list>
     </option>
   </component>
@@ -185,7 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,8 +282,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,7 +611,16 @@
       <updated>1476806460354</updated>
       <workItem from="1476806464449" duration="1903000" />
       <workItem from="1476857841217" duration="300000" />
-      <workItem from="1476890119936" duration="10371000" />
+      <workItem from="1476890119936" duration="10964000" />
+      <workItem from="1476947558632" duration="3434000" />
+      <workItem from="1476981593689" duration="732000" />
+      <workItem from="1477061760922" duration="27000" />
+      <workItem from="1477063787498" duration="6900000" />
+      <workItem from="1477125102496" duration="1018000" />
+      <workItem from="1477144299289" duration="10205000" />
+      <workItem from="1477229367134" duration="2597000" />
+      <workItem from="1477318076415" duration="4025000" />
+      <workItem from="1477476114908" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1476903717268</created>
@@ -599,7 +633,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12574000" />
+    <option name="totallyTimeSpent" value="42776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -608,20 +642,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18927445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13836017" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31185943" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24984005" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994795" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -662,28 +696,95 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+    <entry file="file://$PROJECT_DIR$/src/Control/CenteredColorCoherence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/ColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calculateNeighbor#0;class#ColorCoherence#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="94" selection-start-line="90" selection-start-column="94" selection-end-line="90" selection-end-column="94" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/CenteredColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/ColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calculateNeighbor#0;class#ColorCoherence#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/ColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calculateNeighbor#0;class#ColorCoherence#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -691,53 +792,15 @@
     <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Control/cieConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="initializer##0;class#cieConvert#0" expanded="false" />
-            <element signature="method#initLuvIndex#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#IndexOf#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#RGBtoXYZ#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#round#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#XYZtoLUV#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#RGBtoLUV#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#LUVtoXYZ#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#XYZtoRGB#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#LUVtoRGB#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#setValues#0;class#cieConvert#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -769,8 +832,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/ColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#calculateNeighbor#0;class#ColorCoherence#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -778,27 +850,67 @@
     <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Control/cieConvert.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="initializer##0;class#cieConvert#0" expanded="false" />
-            <element signature="method#initLuvIndex#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#IndexOf#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#RGBtoXYZ#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#round#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#XYZtoLUV#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#RGBtoLUV#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#LUVtoXYZ#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#XYZtoRGB#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#LUVtoRGB#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#setValues#0;class#cieConvert#0" expanded="false" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,24 +922,87 @@
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="0">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="90" column="94" selection-start-line="90" selection-start-column="94" selection-end-line="90" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -836,38 +1011,143 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/cieConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/cieConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/cieConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="507" column="15" selection-start-line="507" selection-start-column="15" selection-end-line="507" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/ColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
           <folding>
-            <element signature="initializer##0;class#cieConvert#0" expanded="false" />
-            <element signature="method#initLuvIndex#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#IndexOf#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#RGBtoXYZ#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#round#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#XYZtoLUV#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#RGBtoLUV#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#LUVtoXYZ#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#XYZtoRGB#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#LUVtoRGB#0;class#cieConvert#0" expanded="false" />
-            <element signature="method#setValues#0;class#cieConvert#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#calculateNeighbor#0;class#ColorCoherence#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="90" column="94" selection-start-line="90" selection-start-column="94" selection-end-line="90" selection-end-column="94" />
+        <state relative-caret-position="17">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/QuadHistogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/CenteredColorCoherence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/CenteredCH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="13" selection-start-line="40" selection-start-column="12" selection-end-line="43" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
