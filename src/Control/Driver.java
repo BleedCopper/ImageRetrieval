@@ -8,7 +8,7 @@ public class Driver {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-        String PATH = "C:/Users/rissa/Desktop/images/";
+        String PATH = "C:/Users/sharkscion/Desktop/images/";
         String FILENAME = "0.jpg";
 
         Scanner sc = new Scanner(System.in);

@@ -64,7 +64,8 @@ public class GUI {
                                 for (int i = 0; i < 159; i++) {
                                     if (origFileHistogram[i] > 0.005) {
                                         counter++;
-                                        answer += (1 - Math.abs(origFileHistogram[i] - testingFileHistogram[i]) / Math.max(origFileHistogram[i], testingFileHistogram[i]));
+                                        answer += (1 - Math.abs(origFileHistogram[i] - testingFileHistogram[i]) /
+                                                       Math.max(origFileHistogram[i], testingFileHistogram[i]));
                                     }
                                 }
 
