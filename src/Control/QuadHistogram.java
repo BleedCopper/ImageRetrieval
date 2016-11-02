@@ -3,14 +3,36 @@ package Control;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by rissa on 10/24/2016.
  */
 public class QuadHistogram {
 
+    public static void writeToFile(String PATH, String FILENAME) {
+
+        try {
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("QuadH.txt", true)));
+
+            double[][] results = computeHistogram(PATH, FILENAME);
+            for(int i=0; i<results.length; i++) {
+                for (int j=0; j<results[0].length; j++){
+                    pw.print(results[i][j] + " ");
+                }
+            }
+
+            pw.println();
+
+            pw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public static double[][] computeHistogram(String PATH, String FILENAME) {
 
         File file = new File(PATH, FILENAME);

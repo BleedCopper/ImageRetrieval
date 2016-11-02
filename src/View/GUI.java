@@ -9,10 +9,11 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 
 /**
  * Created by rissa on 10/19/2016.
@@ -38,6 +39,8 @@ public class GUI {
     private File fsearch;
     private File fdir;
 
+    static HashMap<String, Image> images;
+
     private double[][] simMatrix;
     private cieConvert cieConvert;
     public GUI() {
@@ -58,11 +61,11 @@ public class GUI {
                     if (dirListing != null) {
 //                        Histogram histogram = new Histogram();
 //                        ColorCoherence colorCoherence = new ColorCoherence()
-                        double[] origFileHistogram = Histogram.readHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
-                        double[][] origFileQuadHistogram = QuadHistogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
-                        double[][] origFileCenterHistogram = CenteredCH.computeCH(fsearch.getParentFile().getPath(), fsearch.getName());
-                        int[][] origFileCCV = ColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
-                        int[][][] origFileCenterCCV = CenteredColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
+                        double[] origFileHistogram = images.get(fsearch.getName()).getHistogram();
+                        double[][] origFileQuadHistogram = images.get(fsearch.getName()).getQuadHistogram();
+                        double[][] origFileCenterHistogram = images.get(fsearch.getName()).getCenterHistogram();
+                        int[][] origFileCCV = images.get(fsearch.getName()).getCcv();
+                        int[][][] origFileCenterCCV = images.get(fsearch.getName()).getCenterCCV();
 
                         ArrayList<Model.Image> list = new ArrayList<Image>();
                         for (File child : dirListing) {
@@ -71,7 +74,7 @@ public class GUI {
                             if (child.getName().equals(fsearch.getName())) continue;
 
                             if (colorHistogramMethodRadioButton.isSelected()) {
-                                double[] testingFileHistogram = Histogram.readHistogram(fdir.getPath(), child.getName());
+                                double[] testingFileHistogram = images.get(child.getName()).getHistogram();
                                 int counter = 0;
                                 double answer = 0;
 
@@ -93,7 +96,7 @@ public class GUI {
                             if(CHWithPerceptualSimilarityRadioButton.isSelected()){
 
 
-                                double[] testingFileHistogram = Histogram.computeHistogram(fdir.getPath(), child.getName());
+                                double[] testingFileHistogram = images.get(child.getName()).getHistogram();
                                 double simExact = 0;
                                 double simColor = 0;
 
@@ -121,7 +124,7 @@ public class GUI {
                                 list.add(img);
                             }
                             if(histogramRefinementWithColorRadioButton.isSelected()){
-                                int[][] testingFileCCV = ColorCoherence.computeCCV(fdir.getPath(), child.getName(), 5);
+                                int[][] testingFileCCV = images.get(child.getName()).getCcv();
 
                                 double answer = 0;
 
@@ -134,7 +137,7 @@ public class GUI {
                                 list.add(img);
                             }
                             if(CHWithCenteringRefinementRadioButton.isSelected()){
-                                double[][] testingFileCenterHistogram = CenteredCH.computeCH(fdir.getPath(), child.getName());
+                                double[][] testingFileCenterHistogram = images.get(child.getName()).getCenterHistogram();
 
                                 double fin=0;
                                 for (int j =0; j<2; j++){
@@ -157,7 +160,7 @@ public class GUI {
                                 list.add(img);
                             }
                             if(CCVWithCenteringRefinementRadioButton.isSelected()){
-                                int[][][] testingFileCenterCCV = CenteredColorCoherence.computeCCV(fdir.getPath(), child.getName(), 5);
+                                int[][][] testingFileCenterCCV = images.get(child.getName()).getCenterCCV();
 
                                 double answer = 0;
 
@@ -171,7 +174,7 @@ public class GUI {
                                 list.add(img);
                             }
                             if(quadCHRadioButton.isSelected()){
-                                double[][] testingFileQuadHistogram = QuadHistogram.computeHistogram(fdir.getPath(), child.getName());
+                                double[][] testingFileQuadHistogram = images.get(child.getName()).getQuadHistogram();
 
                                 double fin=0;
                                 for (int j =0; j<4; j++){
@@ -271,5 +274,84 @@ public class GUI {
         frame.pack();
         frame.setSize(new Dimension(1300, 1000));
         frame.setVisible(true);
+        String PATH="C:\\Users\\rissa\\Desktop\\images";
+
+        images = new HashMap<>();
+        File file = new File(PATH);
+
+        try {
+            BufferedReader hbr = new BufferedReader(new InputStreamReader(new FileInputStream("Histogram.txt")));
+            BufferedReader ccvbr = new BufferedReader(new InputStreamReader(new FileInputStream("CCV.txt")));
+            BufferedReader centerccvbr = new BufferedReader(new InputStreamReader(new FileInputStream("CenterCCV.txt")));
+            BufferedReader centerhbr = new BufferedReader(new InputStreamReader(new FileInputStream("CenterH.txt")));
+            BufferedReader quadhbr = new BufferedReader(new InputStreamReader(new FileInputStream("QuadH.txt")));
+            String line;
+
+            for (int i=0; i<file.listFiles().length; i++){
+                line = hbr.readLine();
+
+                Image img = new Image(new File(PATH,line));
+                images.put(img.getF().getName(), img);
+
+                line=hbr.readLine();
+                String[] stringArrayOfHistogramValues = line.split(" ");
+                double[] fileHistogram = new double[159];
+                int z=0;
+                for(String str: stringArrayOfHistogramValues) {
+                    fileHistogram[z] = Double.parseDouble(str);
+                    z++;
+                }
+                img.setHistogram(fileHistogram);
+
+                line=ccvbr.readLine();
+                String[] arr = line.split(" ");
+                int[][] ccv = new int[159][2];
+                for (int j=0; j<159; j++){
+                    for (int k=0; k<2; k++){
+                        ccv[j][k]=Integer.parseInt(arr[(j*2)+k]);
+                    }
+                }
+                img.setCcv(ccv);
+
+                line=centerccvbr.readLine();
+                arr = line.split(" ");
+                int[][][] cenccv = new int[2][159][2];
+
+                for (int x=0; x<2; x++) {
+                    for (int j = 0; j < 159; j++) {
+                        for (int k = 0; k < 2; k++) {
+                            cenccv[x][j][k] = Integer.parseInt(arr[x*159+((j * 2) + k)]);
+                        }
+                    }
+                }
+                img.setCenterCCV(cenccv);
+
+                line = centerhbr.readLine();
+                arr = line.split(" ");
+                double[][] ch = new double[2][159];
+                for (int j=0; j<2; j++){
+                    for (int k=0; k<159; k++){
+                        ch[j][k]=Double.parseDouble(arr[(j*159)+k]);
+                    }
+                }
+                img.setCenterHistogram(ch);
+
+                line = quadhbr.readLine();
+                arr = line.split(" ");
+                double[][] qh = new double[4][159];
+                for (int j=0; j<4; j++){
+                    for (int k=0; k<159; k++){
+                        qh[j][k]=Double.parseDouble(arr[(j*159)+k]);
+                    }
+                }
+                img.setQuadHistogram(qh);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }

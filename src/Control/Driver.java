@@ -1,8 +1,6 @@
 package Control;
 
 import java.io.File;
-import java.io.PrintWriter;
-import java.util.Scanner;
 
 public class Driver {
 
@@ -10,9 +8,9 @@ public class Driver {
         // TODO Auto-generated method stub
 
         // Code to write Histogram values to Histogram.txt
-        /*String PATH = "C:\\Users\\Avril_PC\\Desktop\\images\\";
+        String PATH = "C:\\Users\\rissa\\Desktop\\images";
 
-        Histogram h = new Histogram();
+//        Histogram h = new Histogram();
         File dir = new File(PATH);
         File[] dirListing = dir.listFiles();
 
@@ -20,9 +18,13 @@ public class Driver {
 
             if (!child.getName().endsWith("jpg")) continue;
 
-            h.computeHistogramWriteToFile(PATH, child.getName());
+            Histogram.computeHistogramWriteToFile(PATH, child.getName());
+            QuadHistogram.writeToFile(PATH, child.getName());
+            CenteredCH.writeToFile(PATH, child.getName());
+            ColorCoherence.writeToFile(PATH, child.getName());
+            CenteredColorCoherence.writeToFile(PATH, child.getName());
 
-        }*/
+        }
 
         // Code to read from Histogram.txt
         /*String PATH = "C:\\Users\\Avril_PC\\Desktop\\images\\";

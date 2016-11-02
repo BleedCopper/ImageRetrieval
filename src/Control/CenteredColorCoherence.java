@@ -3,13 +3,40 @@ package Control;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by rissa on 10/22/2016.
  */
 public class CenteredColorCoherence {
+
+
+
+    public static void writeToFile(String PATH, String FILENAME) {
+
+        try {
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("CenterCCV.txt", true)));
+
+            int[][][] results = computeCCV(PATH, FILENAME, 5);
+            for(int i=0; i<results.length; i++) {
+                for (int j=0; j<results[0].length; j++){
+                    for (int k=0; k<results[0][0].length; k++){
+                        pw.print(results[i][j][k] + " ");
+                    }
+                }
+            }
+
+            pw.println();
+
+            pw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static int[][][] computeCCV(String PATH, String FILENAME, int TAU) {
 
