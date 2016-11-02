@@ -58,7 +58,7 @@ public class GUI {
                     if (dirListing != null) {
 //                        Histogram histogram = new Histogram();
 //                        ColorCoherence colorCoherence = new ColorCoherence()
-                        double[] origFileHistogram = Histogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
+                        double[] origFileHistogram = Histogram.readHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
                         double[][] origFileQuadHistogram = QuadHistogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
                         double[][] origFileCenterHistogram = CenteredCH.computeCH(fsearch.getParentFile().getPath(), fsearch.getName());
                         int[][] origFileCCV = ColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
@@ -71,7 +71,7 @@ public class GUI {
                             if (child.getName().equals(fsearch.getName())) continue;
 
                             if (colorHistogramMethodRadioButton.isSelected()) {
-                                double[] testingFileHistogram = Histogram.computeHistogram(fdir.getPath(), child.getName());
+                                double[] testingFileHistogram = Histogram.readHistogram(fdir.getPath(), child.getName());
                                 int counter = 0;
                                 double answer = 0;
 

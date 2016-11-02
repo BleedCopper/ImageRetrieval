@@ -1,6 +1,7 @@
 package Control;
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Driver {
@@ -8,10 +9,34 @@ public class Driver {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
+        // Code to write Histogram values to Histogram.txt
+        /*String PATH = "C:\\Users\\Avril_PC\\Desktop\\images\\";
 
-        cieConvert cieConvert = new cieConvert();
+        Histogram h = new Histogram();
+        File dir = new File(PATH);
+        File[] dirListing = dir.listFiles();
+
+        for (File child : dirListing) {
+
+            if (!child.getName().endsWith("jpg")) continue;
+
+            h.computeHistogramWriteToFile(PATH, child.getName());
+
+        }*/
+
+        // Code to read from Histogram.txt
+        /*String PATH = "C:\\Users\\Avril_PC\\Desktop\\images\\";
+        Histogram h = new Histogram();
+        double[] test = h.readHistogram(PATH, "1006.jpg");
+
+        for(int i=0; i<159; i++) {
+            System.out.print(test[i] + " ");
+        }*/
+
+
+/*        cieConvert cieConvert = new cieConvert();
         cieConvert.initLuvIndex();
-        cieConvert.getSimilarityMatrix(0.2);
+        cieConvert.getSimilarityMatrix(0.2);*/
 
 
 //        String PATH = "C:/Users/rissa/Desktop/images/";
