@@ -38,7 +38,14 @@ public class GUI {
     private File fsearch;
     private File fdir;
 
+    private double[][] simMatrix;
+    private cieConvert cieConvert;
     public GUI() {
+
+        cieConvert = new cieConvert();
+        cieConvert.initLuvIndex();
+        simMatrix = cieConvert.getSimilarityMatrix(0.2);
+
         fsearch = null;
         fdir = null;
         spinner1.setModel(new SpinnerNumberModel(10, 1, 50, 1));
@@ -51,7 +58,7 @@ public class GUI {
                     if (dirListing != null) {
 //                        Histogram histogram = new Histogram();
 //                        ColorCoherence colorCoherence = new ColorCoherence()
-                        double[] origFileHistogram = Histogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
+                        double[] origFileHistogram = Histogram.readHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
                         double[][] origFileQuadHistogram = QuadHistogram.computeHistogram(fsearch.getParentFile().getPath(), fsearch.getName());
                         double[][] origFileCenterHistogram = CenteredCH.computeCH(fsearch.getParentFile().getPath(), fsearch.getName());
                         int[][] origFileCCV = ColorCoherence.computeCCV(fsearch.getParentFile().getPath(), fsearch.getName(), 5);
@@ -64,18 +71,50 @@ public class GUI {
                             if (child.getName().equals(fsearch.getName())) continue;
 
                             if (colorHistogramMethodRadioButton.isSelected()) {
-                                double[] testingFileHistogram = Histogram.computeHistogram(fdir.getPath(), child.getName());
+                                double[] testingFileHistogram = Histogram.readHistogram(fdir.getPath(), child.getName());
                                 int counter = 0;
                                 double answer = 0;
 
                                 for (int i = 0; i < 159; i++) {
                                     if (origFileHistogram[i] > 0.005) {
                                         counter++;
-                                        answer += (1 - Math.abs(origFileHistogram[i] - testingFileHistogram[i]) / Math.max(origFileHistogram[i], testingFileHistogram[i]));
+                                        answer += (1 - Math.abs(origFileHistogram[i] - testingFileHistogram[i]) /
+                                                       Math.max(origFileHistogram[i], testingFileHistogram[i]));
                                     }
                                 }
 
                                 answer /= counter;
+
+                                Image img = new Image(child);
+                                img.setSimilarity(answer*10000);
+                                list.add(img);
+                            }
+
+                            if(CHWithPerceptualSimilarityRadioButton.isSelected()){
+
+
+                                double[] testingFileHistogram = Histogram.computeHistogram(fdir.getPath(), child.getName());
+                                double simExact = 0;
+                                double simColor = 0;
+
+
+                                double answer = 0;
+
+                                for (int i = 0; i < 159; i++) {
+
+                                    if (origFileHistogram[i] > 0.005) {
+                                        double simPerCol = 0;
+                                        simExact = (1 - Math.abs(origFileHistogram[i] - testingFileHistogram[i]) / Math.max(origFileHistogram[i], testingFileHistogram[i]));
+
+                                        for(int j=0; j<159; j++)
+                                            simPerCol += (1-Math.abs(origFileHistogram[i] - testingFileHistogram[j])/
+                                                    Math.max(origFileHistogram[i], testingFileHistogram[i])) * simMatrix[i][j];
+
+                                        simColor = simExact*(1+simPerCol);
+                                        answer+= simColor * origFileHistogram[i];
+                                    }
+
+                                }
 
                                 Image img = new Image(child);
                                 img.setSimilarity(answer*10000);

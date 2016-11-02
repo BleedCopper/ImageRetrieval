@@ -2,11 +2,66 @@ package Control;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.geom.Arc2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 public class Histogram {
+
+    public static void computeHistogramWriteToFile(String PATH, String FILENAME) {
+
+        try {
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("Histogram.txt", true)));
+            pw.println(FILENAME);
+
+            double[] fileHistogram = computeHistogram(PATH, FILENAME);
+            for(int i=0; i<fileHistogram.length; i++) {
+                pw.print(fileHistogram[i] + " ");
+            }
+
+            pw.println();
+
+            pw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static double[] readHistogram(String PATH, String FILENAME) {
+        double[] fileHistogram = new double[159];
+
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("Histogram.txt")));
+            String line;
+            while((line = br.readLine()) != null) {
+                if(line.contains(FILENAME)) {
+                    line = br.readLine();
+                    break;
+                }
+            }
+
+            //System.out.println(line);
+
+            String[] stringArrayOfHistogramValues = line.split(" ");
+
+            int i=0;
+            for(String str: stringArrayOfHistogramValues) {
+                fileHistogram[i] = Double.parseDouble(str);
+                i++;
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return fileHistogram;
+    }
 
     public static double[] computeHistogram(String PATH, String FILENAME) {
 
@@ -50,4 +105,6 @@ public class Histogram {
 
         return origFileHistogram;
     }
+
+
 }
