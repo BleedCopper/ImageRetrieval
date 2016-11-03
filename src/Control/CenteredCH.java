@@ -75,9 +75,11 @@ public class CenteredCH {
                 for (int j = 0; j < bi.getHeight(); j++) {
                     if((i>=0&&i<=side)||(i>=map.length-side&&i<=map.length)||(j>=0&&j<=top)||(j>=map[0].length-top&&j<=map[0].length)){
                         ch[0][map[i][j]]++;
+                        sumo++;
                     }
                     else{
                         ch[1][map[i][j]]++;
+                        sumi++;
                     }
                 }
             }
