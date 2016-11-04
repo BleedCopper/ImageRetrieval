@@ -8,7 +8,7 @@ public class Driver {
         // TODO Auto-generated method stub
 
         // Code to write Histogram values to Histogram.txt
-        String PATH = "C:\\Users\\rissa\\Desktop\\images";
+        String PATH = "C:\\Users\\sharkscion\\Desktop\\images";
 
 //        Histogram h = new Histogram();
         File dir = new File(PATH);

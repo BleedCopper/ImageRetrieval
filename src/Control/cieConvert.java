@@ -696,9 +696,6 @@ public class cieConvert {
         double tColor = p*computeLUVMaxDiff();
         double[][] simMatrix = new double[LuvIndex.length][LuvIndex.length];
 
-        System.out.println("Max Diff: "+computeLUVMaxDiff());
-        System.out.println("tColor: "+tColor);
-
         for (int i = 0; i < LuvIndex.length; i++) {
             for (int j = 0; j < LuvIndex.length; j++) {
                 double diff = getColorDifference(i, j);
@@ -707,15 +704,8 @@ public class cieConvert {
                     simMatrix[i][j] = 0;
                 else
                     simMatrix[i][j] = 1 - diff / tColor;
-
-                System.out.printf("%.2f ",simMatrix[i][j]);
             }
-
-
-             System.out.println();
-
         }
-
 
         return simMatrix;
     }

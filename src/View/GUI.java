@@ -35,6 +35,8 @@ public class GUI {
     private JPanel panList;
     private JRadioButton quadCHRadioButton;
     private JRadioButton CCVWithCenteringRefinementRadioButton;
+    private JPanel pOrig;
+    private JLabel lblOrigImage;
 
     private File fsearch;
     private File fdir;
@@ -44,6 +46,7 @@ public class GUI {
     private double[][] simMatrix;
     private cieConvert cieConvert;
     public GUI() {
+
 
         cieConvert = new cieConvert();
         cieConvert.initLuvIndex();
@@ -61,6 +64,9 @@ public class GUI {
                     if (dirListing != null) {
 //                        Histogram histogram = new Histogram();
 //                        ColorCoherence colorCoherence = new ColorCoherence()
+
+
+
                         double[] origFileHistogram = images.get(fsearch.getName()).getHistogram();
                         double[][] origFileQuadHistogram = images.get(fsearch.getName()).getQuadHistogram();
                         double[][] origFileCenterHistogram = images.get(fsearch.getName()).getCenterHistogram();
@@ -232,6 +238,7 @@ public class GUI {
                     fsearch = file;
                     //This is where a real application would open the file.
                     btnfile.setText(file.getName());
+                    lblOrigImage.setIcon(new ImageIcon(fsearch.getPath()));
                 }
             }
         });
@@ -274,7 +281,7 @@ public class GUI {
         frame.pack();
         frame.setSize(new Dimension(1300, 1000));
         frame.setVisible(true);
-        String PATH="C:\\Users\\rissa\\Desktop\\images";
+        String PATH="C:\\Users\\sharkscion\\Desktop\\images";
 
         images = new HashMap<>();
         File file = new File(PATH);
