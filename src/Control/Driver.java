@@ -4,14 +4,12 @@ import java.io.File;
 
 public class Driver {
 
+
+
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-
-        // Code to write Histogram values to Histogram.txt
-        String PATH = "C:\\Users\\sharkscion\\Desktop\\images";
-
-//        Histogram h = new Histogram();
+        String PATH = "\\images";
         File dir = new File(PATH);
         File[] dirListing = dir.listFiles();
 

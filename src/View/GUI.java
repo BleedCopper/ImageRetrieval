@@ -30,7 +30,6 @@ public class GUI {
     private JRadioButton CHWithCenteringRefinementRadioButton;
     private JSpinner spinner1;
     private JButton btnfile;
-    private JButton btndirectory;
     private JPanel panImages;
     private JPanel panList;
     private JRadioButton quadCHRadioButton;
@@ -48,6 +47,8 @@ public class GUI {
     public GUI() {
 
 
+
+
         cieConvert = new cieConvert();
         cieConvert.initLuvIndex();
         simMatrix = cieConvert.getSimilarityMatrix(0.2);
@@ -56,6 +57,29 @@ public class GUI {
         fdir = null;
         spinner1.setModel(new SpinnerNumberModel(10, 1, 50, 1));
         panList.setLayout(new GridLayout(0, 6));
+
+        String PATH="images";
+
+        images = new HashMap<>();
+        File file = new File(PATH);
+
+        fdir = file;
+        //This is where a real application would open the file.
+
+        File[] dirListing = file.listFiles();
+        if (dirListing != null) {
+
+            for (File child : dirListing) {
+
+                if (!child.getName().endsWith("jpg")) continue;
+
+                JLabel lbl = new JLabel(new ImageIcon(child.getPath()));
+                panList.add(lbl);
+            }
+            panImages.revalidate();
+            panImages.repaint();
+        }
+
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -242,36 +266,6 @@ public class GUI {
                 }
             }
         });
-
-        btndirectory.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFileChooser f = new JFileChooser();
-
-                f.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                int num = f.showOpenDialog(panel1);
-                if (num == JFileChooser.APPROVE_OPTION) {
-                    File file = f.getSelectedFile();
-                    fdir = file;
-                    //This is where a real application would open the file.
-                    btndirectory.setText(file.getAbsolutePath());
-
-                    File[] dirListing = file.listFiles();
-                    if (dirListing != null) {
-
-                        for (File child : dirListing) {
-
-                            if (!child.getName().endsWith("jpg")) continue;
-
-                            JLabel lbl = new JLabel(new ImageIcon(child.getPath()));
-                            panList.add(lbl);
-                        }
-                        panImages.revalidate();
-                        panImages.repaint();
-                    }
-                }
-            }
-        });
     }
 
     public static void main(String[] args) {
@@ -280,11 +274,22 @@ public class GUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(new Dimension(1300, 1000));
-        frame.setVisible(true);
-        String PATH="C:\\Users\\sharkscion\\Desktop\\images";
+
+        JFrame message = new JFrame();
+        message.setSize(new Dimension(500, 400));
+        JPanel pan = new JPanel();
+        message.setContentPane(pan);
+        JLabel lbl =new JLabel("Please wait while the system loads up.");
+        lbl.setFont(new Font("Serif", Font.BOLD, 24));
+        pan.add(lbl);
+        message.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        message.setVisible(true);
+
+        String PATH="images";
 
         images = new HashMap<>();
         File file = new File(PATH);
+        //This is where a real application would open the file.
 
         try {
             BufferedReader hbr = new BufferedReader(new InputStreamReader(new FileInputStream("Histogram.txt")));
@@ -295,9 +300,11 @@ public class GUI {
             String line;
 
             for (int i=0; i<file.listFiles().length; i++){
+
                 line = hbr.readLine();
 
                 Image img = new Image(new File(PATH,line));
+
                 images.put(img.getF().getName(), img);
 
                 line=hbr.readLine();
@@ -345,8 +352,7 @@ public class GUI {
 
                 line = quadhbr.readLine();
                 arr = line.split(" ");
-                double[][] qh = new double[4][159];
-                for (int j=0; j<4; j++){
+                double[][] qh = new double[4][159];                for (int j=0; j<4; j++){
                     for (int k=0; k<159; k++){
                         qh[j][k]=Double.parseDouble(arr[(j*159)+k]);
                     }
@@ -354,10 +360,26 @@ public class GUI {
                 img.setQuadHistogram(qh);
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            String p = "images";
+            File dir = new File(p);
+            File[] dirListing = dir.listFiles();
+
+            for (File child : dirListing) {
+
+                if (!child.getName().endsWith("jpg")) continue;
+
+                Histogram.computeHistogramWriteToFile(p, child.getName());
+                QuadHistogram.writeToFile(p, child.getName());
+                CenteredCH.writeToFile(p, child.getName());
+                ColorCoherence.writeToFile(p, child.getName());
+                CenteredColorCoherence.writeToFile(p, child.getName());
+
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
+        message.setVisible(false);
+        frame.setVisible(true);
 
 
     }

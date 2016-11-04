@@ -89,7 +89,6 @@ public class CenteredCH {
                 ch[1][i] = ch[1][i] / totalPixels/2;
             }
 
-            System.out.println(bi.getHeight()+" "+bi.getWidth()+" "+top+" "+side+" "+sumi+" "+sumo+" "+totalPixels);
 
         } catch (IOException e) {
             // TODO Auto-generated catch block

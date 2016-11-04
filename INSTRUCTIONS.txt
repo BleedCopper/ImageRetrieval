@@ -1,0 +1,18 @@
+RUNNING
+1. To run program: double click on MULTIRE.jar
+2. The program should open and show the gallery of images
+
+CHANGING IMAGES
+1. Locate the images folder
+2. Replace/Remove/Add images in the images folder
+3. Delete CCV, CenterCCV, CenterH, Histogram, and QuadH text files
+4. Run the program
+5. Wait for 5-10 minutes as the program recreates the text files containing information on the images
+
+ERRORS
+1. In case of any errors, delete CCV, CenterCCV, CenterH, Histogram, and QuadH text files
+2. Run the program
+3. Wait for 5-10 minutes as the program recreates the text files containing information on the images
+
+ADDITIONAL NOTES
+1. Make sure image being searched for is also in the images folder
