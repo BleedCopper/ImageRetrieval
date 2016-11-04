@@ -7,95 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7adb7fd0-28a3-4e59-977b-fa532bbdb226" name="Default" comment="initial">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imageretrieval.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/100.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1000.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1009.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/101.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1010.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1011.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1012.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1013.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1014.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1015.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1016.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1017.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1018.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1019.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/102.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1020.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1021.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1022.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1023.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1024.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1025.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1026.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1027.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1028.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1029.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/103.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1030.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1031.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1032.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1033.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1034.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1035.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1036.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1037.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1038.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1039.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/104.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1040.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1041.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1042.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1043.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1044.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1045.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2266.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2267.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2268.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/imageretrieval_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CCV.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CenterCCV.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CenterH.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Histogram.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/INSTRUCTIONS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuadH.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$3.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/CenteredCH.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/CenteredCH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/CenteredColorCoherence.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/CenteredColorCoherence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/Driver.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/Driver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/Control/cieConvert.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/Control/cieConvert.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1$1.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$2.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/View/GUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/AbstractLayout.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/AbstractLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/DimensionInfo.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/DimensionInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/GridConstraints.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/GridConstraints.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/GridLayoutManager.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/GridLayoutManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/HorizontalInfo.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/HorizontalInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/LayoutState.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/LayoutState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/Spacer.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/Spacer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/SupportCode.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/SupportCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/Util.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/VerticalInfo.class" afterPath="$PROJECT_DIR$/out/production/imageretrieval/com/intellij/uiDesigner/core/VerticalInfo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Control/CenteredCH.java" afterPath="$PROJECT_DIR$/src/Control/CenteredCH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Control/Driver.java" afterPath="$PROJECT_DIR$/src/Control/Driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI.form" afterPath="$PROJECT_DIR$/src/View/GUI.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI.java" afterPath="$PROJECT_DIR$/src/View/GUI.java" />
     </list>
     <ignored path="imageretrieval.iws" />
@@ -126,16 +38,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48462567">
+              <caret line="197" column="69" selection-start-line="197" selection-start-column="69" selection-end-line="197" selection-end-column="69" />
               <folding>
-                <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-                <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
                 <element signature="method#compare#0;class#10159:10431" expanded="true" />
                 <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+                <element signature="method#main#0;class#GUI#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,7 +65,7 @@
       <file leaf-file-name="CenterH.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CenterH.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1052.326">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -199,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="INSTRUCTIONS.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="INSTRUCTIONS.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/INSTRUCTIONS.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.435">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
@@ -272,9 +183,9 @@
         <option value="$PROJECT_DIR$/CenterCCV.txt" />
         <option value="$PROJECT_DIR$/src/Control/Driver.java" />
         <option value="$PROJECT_DIR$/src/View/GUI.form" />
-        <option value="$PROJECT_DIR$/src/View/GUI.java" />
         <option value="$PROJECT_DIR$/src/Control/CenteredCH.java" />
         <option value="$PROJECT_DIR$/INSTRUCTIONS.txt" />
+        <option value="$PROJECT_DIR$/src/View/GUI.java" />
       </list>
     </option>
   </component>
@@ -324,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,10 +272,6 @@
               <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GUI" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -395,6 +304,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -417,8 +330,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -952,6 +863,8 @@
       <workItem from="1478111604511" duration="123000" />
       <workItem from="1478111844458" duration="3432000" />
       <workItem from="1478258061053" duration="3327000" />
+      <workItem from="1478262148471" duration="1917000" />
+      <workItem from="1478272597971" duration="132000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1476903717268</created>
@@ -963,37 +876,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53823000" />
+    <option name="totallyTimeSpent" value="55872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3224" height="1754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19153094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18522073" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24984005" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994795" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994795" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19153094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1056,10 +969,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
             <element signature="method#compare#0;class#10159:10431" expanded="true" />
             <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1105,10 +1017,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
             <element signature="method#compare#0;class#10159:10431" expanded="true" />
             <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,10 +1060,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
             <element signature="method#compare#0;class#10159:10431" expanded="true" />
             <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1229,10 +1139,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
             <element signature="method#compare#0;class#10159:10431" expanded="true" />
             <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1276,10 +1185,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
             <element signature="method#compare#0;class#10159:10431" expanded="true" />
             <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1323,10 +1231,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="94" selection-start-line="90" selection-start-column="94" selection-end-line="90" selection-end-column="94" />
           <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
             <element signature="method#compare#0;class#10159:10431" expanded="true" />
             <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1427,19 +1334,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3228745">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Image.java">
@@ -1481,7 +1387,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CenterH.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1052.326">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1492,19 +1398,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3406" column="0" selection-start-line="3406" selection-start-column="0" selection-end-line="3406" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
-          <folding>
-            <element signature="method#GUI#0;class#GUI#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#2232:11031" expanded="true" />
-            <element signature="method#compare#0;class#10159:10431" expanded="true" />
-            <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1545,9 +1438,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/INSTRUCTIONS.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.435">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48462567">
+          <caret line="197" column="69" selection-start-line="197" selection-start-column="69" selection-end-line="197" selection-end-column="69" />
+          <folding>
+            <element signature="method#compare#0;class#10159:10431" expanded="true" />
+            <element signature="method#actionPerformed#0;class#11073:11779" expanded="true" />
+            <element signature="method#main#0;class#GUI#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

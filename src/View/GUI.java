@@ -163,7 +163,7 @@ public class GUI {
                                 }
 
                                 Image img = new Image(child);
-                                img.setSimilarity(1-answer);
+                                img.setSimilarity(0-answer);
                                 list.add(img);
                             }
                             if(CHWithCenteringRefinementRadioButton.isSelected()){
@@ -200,7 +200,7 @@ public class GUI {
                                 }
 
                                 Image img = new Image(child);
-                                img.setSimilarity(1-answer);
+                                img.setSimilarity(0-answer);
                                 list.add(img);
                             }
                             if(quadCHRadioButton.isSelected()){
