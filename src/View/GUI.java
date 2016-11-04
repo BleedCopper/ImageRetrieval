@@ -151,18 +151,18 @@ public class GUI {
                                     int counter = 0;
                                     double answer = 0;
                                     for (int i = 0; i < 159; i++) {
-                                        if (origFileQuadHistogram[j][i] > 0.005) {
+                                        if (origFileCenterHistogram[j][i] > 0.005) {
                                             counter++;
                                             answer += (1 - Math.abs(origFileCenterHistogram[j][i] - testingFileCenterHistogram[j][i]) / Math.max(origFileCenterHistogram[j][i], testingFileCenterHistogram[j][i]));
                                         }
                                     }
 
-                                    answer /= counter;
+                                    if(counter!=0)answer /= counter;
                                     fin+=answer;
                                 }
 
                                 Image img = new Image(child);
-                                img.setSimilarity(fin*10000);
+                                img.setSimilarity(fin*100000);
                                 list.add(img);
                             }
                             if(CCVWithCenteringRefinementRadioButton.isSelected()){
@@ -199,7 +199,7 @@ public class GUI {
                                 }
 
                                 Image img = new Image(child);
-                                img.setSimilarity(fin*10000);
+                                img.setSimilarity(fin*100000);
                                 list.add(img);
                             }
                         }

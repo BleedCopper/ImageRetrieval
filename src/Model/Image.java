@@ -13,7 +13,7 @@ public class Image {
     int[][] ccv;
     int[][][] centerCCV;
 
-    private int similarity;
+    private double similarity;
 
     public Image(File f) {
         this.f = f;
@@ -68,11 +68,11 @@ public class Image {
         this.centerCCV = centerCCV;
     }
 
-    public int getSimilarity() {
+    public double getSimilarity() {
         return similarity;
     }
 
     public void setSimilarity(double similarity) {
-        this.similarity = (int) similarity;
+        this.similarity =  similarity;
     }
 }

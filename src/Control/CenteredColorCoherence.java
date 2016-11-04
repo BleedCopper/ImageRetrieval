@@ -98,7 +98,7 @@ public class CenteredColorCoherence {
                 }
             }
 
-            System.out.println(bi.getHeight()+" "+bi.getWidth()+" "+top+" "+side+" "+sumi+" "+sumo+" "+totalPixels);
+//            System.out.println(bi.getHeight()+" "+bi.getWidth()+" "+top+" "+side+" "+sumi+" "+sumo+" "+totalPixels);
 
         } catch (IOException e) {
             // TODO Auto-generated catch block

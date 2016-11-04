@@ -7,6 +7,7 @@ public class Driver {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
+
         // Code to write Histogram values to Histogram.txt
         String PATH = "C:\\Users\\sharkscion\\Desktop\\images";
 
@@ -26,7 +27,7 @@ public class Driver {
 
         }
 
-        // Code to read from Histogram.txt
+        // Code to read
         /*String PATH = "C:\\Users\\Avril_PC\\Desktop\\images\\";
         Histogram h = new Histogram();
         double[] test = h.readHistogram(PATH, "1006.jpg");
